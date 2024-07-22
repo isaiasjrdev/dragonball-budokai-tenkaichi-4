@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="shortcut icon" href="./src/imagens/favicon.png" type="image/x-icon">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+	<link rel="shortcut icon" href="./src/imagens/favicon.png" type="image/x-icon">
 
-		<link rel="stylesheet" href="./src/css/reset.css">
-		<link rel="stylesheet" href="./src/css/estilos.css">
-		<link rel="stylesheet" href="./src/css/responsivo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
 
-		<title>DragonBall Budokai Tenkaichi 4</title>
-	</head>
-	<body>
-		<div class="fundo-video">
-			<video class="video" autoplay loop muted>
-				<source src="./src/video/video-dragonball.mp4" type="video/mp4" />
-			</video>
+	<link rel="stylesheet" href="./src/css/reset.css">
+	<link rel="stylesheet" href="./src/css/estilos.css">
+	<link rel="stylesheet" href="./src/css/responsivo.css">
+
+	<title>DragonBall Budokai Tenkaichi 4</title>
+</head>
+
+<body>
+	<div class="fundo-video">
+		<video class="video" autoplay loop muted>
+			<source src="./src/video/video-dragonball.mp4" type="video/mp4" />
+		</video>
+	</div>
+
+	<header class="cabecalho">
+		<a>
+			<img class="logo" src="./src/imagens/dragonball-logo.png" alt="logo dragão com esferas" />
+		</a>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Detalhes</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="informacoes">
+			<img class="imagem-titulo" src="./src/imagens/db-titulo.png" alt="imagem do título do jogo" />
+			<p class="descricao">Dragonball Sparking! Zero é uma sequência do famoso <em>Dragon Ball Budokai
+					Tenkaichi</em> muito famoso na era PlayStation 2. Esta sequência foi anunciada em março de 2023 e
+				ganhou data de lançamento prevista para outubro de 2024 durante o Summer Game Fest.</p>
+			<button class="botao-trailer">Veja o trailer</button>
 		</div>
+		<img class="chars" src="./src/imagens/dragonball-chars.png" />
 
-		<header class="cabecalho">
-			<a>
-				<img class="logo" src="./src/imagens/dragonball-logo.png" alt="logo dragão com esferas" />
-			</a>
-			<nav>
-				<ul class="menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Detalhes</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="container">
-			<div class="informacoes">
-				<img class="imagem-titulo" src="./src/imagens/db-titulo1.png" alt="imagem do título do jogo" />
-				<p class="descricao">Dragon Ball Z: Budokai Tenkaichi 4 é um jogo de luta baseado na famosa série de anime Dragon Ball Z. O jogo apresenta uma jogabilidade de luta em 3D, que permite aos jogadores controlar mais de 150 personagens da série Dragon Ball Z, incluindo Goku, Vegeta, Piccolo, Freeza, Cell e muitos outros.</p>
-				<button class="botao-trailer">Veja o trailer</button>
+		<div class="modal">
+			<div class="conteudo-modal">
+				<span class="fechar-modal">X</span>
+				<iframe id="video" width="560" height="315" src="https://youtu.be/aYDHVpPRoZs?si=uGl8nAXqjWdUxD9P"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
 			</div>
-			<img class="chars" src="./src/imagens/dragonball-chars.png" />
+		</div>
+	</main>
 
-			<div class="modal">
-				<div class="conteudo-modal">
-					<span class="fechar-modal">X</span>
-					<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/O5CzC1aFVAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-			</div>
-		</main>
+	<script src="./src/js/index.js"></script>
+</body>
 
-		<script src="./src/js/index.js"></script>
-	</body>
 </html>
